@@ -10,7 +10,7 @@
 /* Custom Header Size
 -----------------------------------------------------------------*/
 .header-size-custom #logo img {
-	height: 70px;
+	height: 100px;
 }
 
 @media (min-width: 992px) {
@@ -73,7 +73,8 @@
 	#header.sticky-header #header-wrap,
 	#header.full-header.border-full-header.sticky-header #header-wrap {
 		box-shadow: none;
-		border-bottom: 1px solid #F5F5F5 !important;
+		border-radius: 0px 0px 45px 45px;
+       border-bottom: 1px solid #320083 !important;
 		-webkit-backface-visibility: hidden;
 	}
 
@@ -121,7 +122,7 @@ body.side-panel-left.side-push-panel.side-panel-open.stretched #header .containe
 	Page Section
 ---------------------------------------------------------------------------- */
 
-.page-section { padding: 120px 0; }
+.page-section { padding: 60px 0; }
 
 
 /* ----------------------------------------------------------------------------
