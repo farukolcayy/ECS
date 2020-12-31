@@ -10,7 +10,7 @@
 .dark h4,
 .dark h5,
 .dark h6 {
-	color: #EEE;
+	color: rgb(255, 255, 255);
 }
 
 .dark a:not([class*="btn-"]):hover {
@@ -1458,7 +1458,7 @@ body #side-panel.dark {
 .dark #footer,
 #footer.dark {
 
-	color: rgba(255,255,255,0.75);
+	color: #fff
 	/* background-color: #282828;
 	border-top-color: rgba(255,255,255,0.15); */
 }
