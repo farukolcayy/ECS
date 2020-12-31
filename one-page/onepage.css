@@ -74,7 +74,7 @@
 	#header.full-header.border-full-header.sticky-header #header-wrap {
 		box-shadow: none;
 		border-radius: 0px 0px 45px 45px;
-       border-bottom: 1px solid #320083 !important;
+       /* border-bottom: 1px solid #320083 !important; */
 		-webkit-backface-visibility: hidden;
 	}
 
@@ -95,8 +95,8 @@
 	.primary-menu .menu-container .menu-link {
 		padding-left: 22px;
 		padding-right: 22px;
-		font-size: 12px;
-		font-weight: 400;
+		font-size: 15px;
+    font-weight: bold;
 		letter-spacing: 3px;
 	}
 

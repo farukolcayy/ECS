@@ -2993,6 +2993,7 @@ html[xmlns] .slider-wrap {
 	}
 
 	.sticky-header #header-wrap {
+		background-image: url('one-page/images/page/banner.jpg');
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -9488,7 +9489,9 @@ body:not(.device-touch) .button.button-full strong {
 .fbox-plain.fbox-light .fbox-icon img { color: #888; }
 
 .fbox-plain.fbox-dark .fbox-icon i,
-.fbox-plain.fbox-dark .fbox-icon img { color: #444; }
+.fbox-plain.fbox-dark .fbox-icon img { color: #444; background: linear-gradient(90deg, rgb(0 126 255) 0%, rgb(0 255 243) 50%, rgb(0 161 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 
 /* Feature Box - Icon Plain Sizes
@@ -13724,8 +13727,10 @@ button.toast-close-button {
 
 
 #footer {
+	background-image: url('one-page/images/page/footer.jpg');
+     
 	position: relative;
-	background-color: #EEE;
+	/* background-color: #EEE; */
 	border-top: 5px solid rgba(0,0,0,0.2);
 }
 
@@ -13745,13 +13750,13 @@ button.toast-close-button {
 
 #footer .footer-widgets-wrap {
 	position: relative;
-	padding: 80px 0;
+	padding: 40px 0px 0px 0px;
 }
 
 #copyrights {
 	padding: 40px 0;
-	background-color: #DDD;
-	font-size: 0.875rem;
+	/* background-color: #DDD; */
+	font-size: 20px;
 	line-height: 1.8;
 }
 
