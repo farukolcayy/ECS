@@ -1,967 +1,1091 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html lang="en">
+
 <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="SemiColonWeb" />
+  <title>TheEvent Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-	<!-- Stylesheets
-	============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700|IBM+Plex+Serif:300,400,500,600&display=swap" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="one-page/css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link rel="stylesheet" type="text/css" href="font/flaticon.css">
+  <!-- Favicons -->
+  <link href="assets/img/favicon_new.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-	<!-- One Page Module Specific Stylesheet -->
-	<link rel="stylesheet" href="one-page/onepage.css" type="text/css" />
-	<!-- / -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
-	<link rel="stylesheet" href="one-page/css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="one-page/css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
-	<link rel="stylesheet" href="one-page/css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="one-page/css/magnific-popup.css" type="text/css" />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="one-page/css/fonts.css" type="text/css" />
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="one-page/css/custom.css" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<!-- Document Title
-	============================================= -->
-	<title>E-Career Summit</title>
-
-	<style>
-		.font-secondary { font-family: 'IBM Plex Serif', serif !important; }
-		.bgchanger { background-color: #EEE; }
-
-		#oc-watch .owl-item,
-		#oc-watch .owl-item img {
-			width: auto;
-			height: auto;
-			margin: 0 auto;
-		}
-
-		#oc-watch.owl-carousel .owl-stage {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		#oc-watch .owl-dots { bottom: 20px; }
-
-		#oc-watch .owl-dots { counter-reset: dots; }
-
-		#oc-watch.owl-carousel .owl-dots .owl-dot {
-			color: #fff;
-			margin: 0 4px;
-			width: auto;
-			height: auto;
-			opacity: .3 !important;
-			border: none;
-			background-color: transparent !important;
-			font-family: 'IBM Plex Serif', serif;
-		}
-
-		#oc-watch .owl-dot:after {
-			content: "";
-			position: absolute;
-			background: #fff;
-			height: 2px;
-			width: 0;
-			top: 50%;
-			margin: -1px 4px 0;
-			transition: all .3s ease;
-		}
-
-		#oc-watch.owl-carousel .owl-dots .owl-dot.active {
-			margin-right: 34px;
-			opacity: 1 !important;
-		}
-
-		#oc-watch .owl-dot.active:after { width: 26px; }
-
-		#oc-watch .owl-dot:before {
-			counter-increment: dots;
-			content: counter(dots, decimal-leading-zero);
-		}
-
-		#slider {
-			-webkit-transition: background-color .4s ease;
-			-o-transition: background-color .4s ease;
-			transition: background-color .4s ease;
-		}
-
-		@-webkit-keyframes mouse-scroll {
-			0% { top: 10%; opacity: 1; }
-			100% { top: 30%; opacity: 0; }
-		}
-		@keyframes mouse-scroll {
-			0% { top: 10%; opacity: 1; }
-			100% { top: 30%; opacity: 0; }
-		}
-
-		@-webkit-keyframes scroll-mouse {
-		    from { transform: translateY(-7px); }
-		    to { transform: translateY(0); }
-		}
-		@keyframes scroll-mouse {
-		    from { transform: translateY(-7px); }
-		    to { transform: translateY(0); }
-		}
-		.scroll-inner {
-			position: relative;
-			width: 26px;
-			height: 40px;
-			border-radius: 18px;
-			border: 2px solid rgb(255, 255, 255);
-			-webkit-animation: scroll-mouse 1s infinite;
-			animation: scroll-mouse 1s infinite;
-		}
-
-		.scroll-wheel {
-			position: absolute;
-			top: 10%;
-			left: 50%;
-			width: 6px;
-			height: 6px;
-			border-radius: 50%;
-			transform: translateX(-50%);
-			background-color: rgb(255, 255, 255);
-			-webkit-animation: mouse-scroll 1s infinite;
-			-moz-animation: mouse-scroll 1s infinite;
-			-o-animation: mouse-scroll 1s infinite;
-			animation: mouse-scroll 1s infinite;
-		}
-
-		.one-page-arrow {
-			bottom: 40px;
-			right: 40px;
-			left: auto;
-		}
-
-	</style>
-
+  <!-- =======================================================
+  * Template Name: TheEvent - v2.3.0
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body class="stretched side-push-panel">
-
-	<div class="body-overlay"></div>
-
-	<div id="side-panel" class="bgchanger">
-
-		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a></div>
-
-		<div class="side-panel-wrap">
-
-			<div class="widget widget_links clearfix">
-
-				<h4>About Canvas</h4>
-
-				<div style="font-size: 14px; line-height: 1.7;">
-					<address style="line-height: 1.7;">
-						795 Folsom Ave, Suite 600<br>
-						San Francisco, CA 94107<br>
-					</address>
-
-					<div class="clear topmargin-sm"></div>
-
-					<abbr title="Phone Number">Phone:</abbr> (1) 8547 632521<br>
-					<abbr title="Fax">Fax:</abbr> (1) 11 4752 1433<br>
-					<abbr title="Email Address">Email:</abbr> info@canvas.com
-				</div>
-
-			</div>
-
-			<div class="widget clearfix">
-
-				<h4>Connect Socially</h4>
-
-				<a href="#" class="social-icon si-small si-colored si-facebook" title="Facebook">
-					<i class="icon-facebook"></i>
-					<i class="icon-facebook"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-twitter" title="Twitter">
-					<i class="icon-twitter"></i>
-					<i class="icon-twitter"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-github" title="Github">
-					<i class="icon-github"></i>
-					<i class="icon-github"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-pinterest" title="Pinterest">
-					<i class="icon-pinterest"></i>
-					<i class="icon-pinterest"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-forrst" title="Forrst">
-					<i class="icon-forrst"></i>
-					<i class="icon-forrst"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-linkedin" title="LinkedIn">
-					<i class="icon-linkedin"></i>
-					<i class="icon-linkedin"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-gplus" title="Google Plus">
-					<i class="icon-gplus"></i>
-					<i class="icon-gplus"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-instagram" title="Instagram">
-					<i class="icon-instagram"></i>
-					<i class="icon-instagram"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-flickr" title="Flickr">
-					<i class="icon-flickr"></i>
-					<i class="icon-flickr"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-skype" title="Skype">
-					<i class="icon-skype"></i>
-					<i class="icon-skype"></i>
-				</a>
-
-			</div>
-
-		</div>
-
-	</div>
-
-	<!-- Document Wrapper
-	============================================= -->
-	<div id="wrapper" class="clearfix">
-
-		<!-- Header
-		============================================= -->
-		<header id="header" class="full-header transparent-header border-full-header header-size-custom" data-sticky-shrink="false" data-sticky-offset="full" data-sticky-offset-negative="200">
-			<div id="header-wrap">
-				<div class="container">
-					<div class="header-row">
-
-						<!-- Logo
-						============================================= -->
-						<div id="logo">
-							<a href="index.html" class="standard-logo" data-dark-logo="one-page/images/canvasone-dark.png"><img src="one-page/images/ecs-logo.png" alt="Canvas Logo"></a>
-							<a href="index.html" class="retina-logo" data-dark-logo="one-page/images/canvasone-dark@2x.png"><img src="one-page/images/canvasone@2x.png" alt="Canvas Logo"></a>
-						</div><!-- #logo end -->
-
-						<!-- <div class="header-misc">
-
-							<div class="side-panel-trigger header-misc-icon">
-								<a href="#"><i class="icon-ellipsis-v"></i></a>
-							</div>
-
-						</div> -->
-
-						<div id="primary-menu-trigger">
-							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
-						</div>
-
-						<!-- Primary Navigation
-						============================================= -->
-						<nav class="primary-menu">
-
-							<ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#wrapper"><div>Ana Sayfa </div></a>
-								</li>
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-about"><div>		Hakkımızda</div></a>
-								</li>
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-works"><div>Partner/Sektör</div></a>
-								</li>
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-services"><div>Hedef</div></a>
-								</li>
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-speaker"><div>Konuşmacılar</div></a>
-								</li>
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-blog"><div>Süreç Takvimi</div></a>
-								</li>
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-contact"><div>İletişim</div></a>
-								</li>
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-register"><div>Kayıt</div></a>
-								</li>
-								
-							</ul>
-
-						</nav><!-- #primary-menu end -->
-
-					</div>
-				</div>
-			</div>
-			<div class="header-wrap-clone"></div>
-		</header><!-- #header end -->
-
-		<!-- Slider
-		============================================= -->
-		<section id="slider" class="slider-element min-vh-100 bgchanger include-header" style="background-color: #EEE; background-image: url('one-page/images/page/deneme-7.jpg'); background-position: center center; background-size: cover;">
-			<div class="slider-inner">
-
-				<div class="vertical-middle slider-element-fade">
-					<div class="container py-5">
-						<div class="row align-items-center">
-							<div class="col-md-6 text-center text-md-left">
-								<div class="emphasis-title mb-0">
-									
-									<h2 class="mt-2 font-weight-semibold font-secondary" style="font-size: 55px; color: #fff; line-height: 1.3; letter-spacing: -2px;"><u style="text-decoration: none;">Yeni Tarz Ticareti, <br> yeni tarz bir zirveyle  tanıtıyoruz!</u></h2>
-									<!-- <h2 class="font-weight-bold mt-4">$200</h2>
-									<a href="#" data-animate="fadeInUp" data-delay="600" class="button button-circle button-white button-light button-large text-white mt-4 nott ls0" style="background-color: #E25B45">View Details</a> -->
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div id="oc-watch" class="owl-carousel carousel-widget" data-margin="0" data-nav="false" data-pagi="true" data-items="1" data-autoplay="5000" data-speed="1000" data-loop="true">
-									<img src="one-page/images/page/watch-2.png" alt="Watch" data-bg="#EEE">
-									<img src="one-page/images/page/watch-3.png" alt="Watch" data-bg="#daec66">
-									<img src="one-page/images/page/watch-1.png" alt="Watch" data-bg="#F1D4CA">
-								</div>
-
-								<div id="oc-watch-bg" style="background: #ffffff; width: 360px; height: 360px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 1; border-radius: 50%;"></div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="one-page-arrow">
-					<div class="scroll-inner">
-				    	<div class="scroll-wheel"></div>
-				  </div>
-				</a>
-
-			</div>
-		</section><!-- #slider end -->
-
-		<!-- Content
-		============================================= -->
-		<section id="content">
-			<div class="content-wrap py-0">
-
-				<div id="section-about" class="center page-section">
-
-					<div class="container clearfix">
-                      
-						<h2 class="mx-auto bottommargin font-body" style="max-width: 700px; font-size: 40px;">E-Career  Summit Nedir?</h2>
-
-						<p class="lead mx-auto bottommargin" style="max-width: 800px;">Özellikle Covid-19 ile birlikte yüksek bir ivme kazanmış ve halihazırda genel ticarette dominant bir hale gelmiş olan E-Ticaret'i,sektörün önde gelen firmaları ve bu firamaların değerli yöneticileri aracılığıyla tanıyor ve tanıtıyoruz.</p>
-
-						
-					</div>
-
-				</div>
-
-				<div id="section-works" class="page-section pt-0">
-
-					<div class="section m-0">
-						<div class="container clearfix">
-							<div class="mx-auto center" style="max-width: 900px;">
-								<h2 class="mb-0 font-weight-light ls1">Partner ve Sektörler</h2>
-							</div>
-						</div>
-					</div>
-
-					<!-- Portfolio Items
-					============================================= -->
-					<div class="portfolio grid-container row no-gutters">
-
-						<article class="portfolio-item col-lg-6 col-md-4 col-sm-6 col-12 wide">
-							<div class="grid-inner">
-								<div class="portfolio-image">
-									<a href="#">
-										<img src="one-page/images/portfolio/mixed/1.jpg" alt="Open Imagination">
-									</a>
-									<div class="bg-overlay">
-										<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
-											<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-												<h3><a href="#">Open Imagination</a></h3>
-												<span><a href="#">Media</a>, <a href="#">Icons</a></span>
-											</div>
-										</div>
-										<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
-							<div class="grid-inner">
-								<div class="portfolio-image">
-									<a href="#">
-										<img src="one-page/images/portfolio/mixed/2.jpg" alt="Locked Steel Gate">
-									</a>
-									<div class="bg-overlay">
-										<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
-											<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-												<h3><a href="#">Locked Steel Gate</a></h3>
-												<span><a href="#">Illustrations</a></span>
-											</div>
-										</div>
-										<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
-							<div class="grid-inner">
-								<div class="portfolio-image">
-									<a href="#">
-										<img src="one-page/images/portfolio/mixed/3.jpg" alt="Mac Sunglasses">
-									</a>
-									<div class="bg-overlay">
-										<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
-											<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-												<h3><a href="#">Mac Sunglasses</a></h3>
-												<span><a href="#">Graphics</a>, <a href="#">UI Elements</a></span>
-											</div>
-										</div>
-										<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						<article class="portfolio-item col-lg-6 col-md-4 col-sm-6 col-12 wide">
-							<div class="grid-inner">
-								<div class="portfolio-image">
-									<a href="#">
-										<img src="one-page/images/portfolio/mixed/4.jpg" alt="Open Imagination">
-									</a>
-									<div class="bg-overlay">
-										<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
-											<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
-												<h3><a href="#">Open Imagination</a></h3>
-												<span><a href="#">Media</a>, <a href="#">Icons</a></span>
-											</div>
-										</div>
-										<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
-									</div>
-								</div>
-							</div>
-						</article>
-
-						
-
-					</div><!-- #portfolio end -->
-
-					 
-
-				</div>
-
-				<div id="section-services" class="page-section pt-0">
-
-					<div class="section m-0">
-						<div class="container clearfix">
-							<div class="mx-auto center" style="max-width: 900px;">
-								<h2 class="mb-0 font-weight-light ls1">HEDEFLERİMİZ</h2>
-							</div>
-						</div>
-					</div>
-
-					<div class="row align-items-stretch">
-
-					
-						<div class="col-lg-12">
-							<div class="row align-items-stretch grid-border clearfix">
-								<div class="col-lg-4 col-md-6 col-padding">
-									<div class="feature-box fbox-center fbox-dark fbox-plain">
-										<div class="fbox-icon">
-											<a href="#"><i class="flaticon-sales"></i></a>
-										</div>
-										<div class="fbox-content fbox-content-sm">
-											<h3>Pazarlama</h3>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-6 col-padding">
-									<div class="feature-box fbox-center fbox-dark fbox-plain">
-										<div class="fbox-icon">
-											<a href="#"><i class="flaticon-sales"></i></a>
-										</div>
-										<div class="fbox-content fbox-content-sm">
-											<h3>Satış</h3>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-6 col-padding">
-									<div class="feature-box fbox-center fbox-dark fbox-plain">
-										<div class="fbox-icon">
-											<a href="#"><i class="flaticon-advertising"></i></a>
-										</div>
-										<div class="fbox-content fbox-content-sm">
-											<h3>Reklamcılık</h3>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-6 col-padding">
-									<div class="feature-box fbox-center fbox-dark fbox-plain">
-										<div class="fbox-icon">
-											<a href="#"><i class="flaticon-data-management"></i></a>
-										</div>
-										<div class="fbox-content fbox-content-sm">
-											<h3>Pazar Araştırması</h3>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-6 col-padding">
-									<div class="feature-box fbox-center fbox-dark fbox-plain">
-										<div class="fbox-icon">
-											<a href="#"><i class="flaticon-network"></i></a>
-										</div>
-										<div class="fbox-content fbox-content-sm">
-											<h3>Veri Yönetimi</h3>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-6 col-padding">
-									<div class="feature-box fbox-center fbox-dark fbox-plain">
-										<div class="fbox-icon">
-											<a href="#"><i class="flaticon-data-mining"></i></a>
-										</div>
-										<div class="fbox-content fbox-content-sm">
-											<h3>Veri Madenciliği</h3>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-					<!-- <div class="section dark m-0">
-						<div class="mx-auto center" style="max-width: 900px;">
-							<h2 class="mb-0 font-weight-light ls1">Like Our Services? Get an <a href="#" data-scrollto="#template-contactform" data-offset="140" data-easing="easeInOutExpo" data-speed="1250" class="button button-border button-circle button-light button-large my-0" style="position: relative; top: -3px;">Instant Quote</a></h2>
-						</div>
-					</div> -->
-
-					<div class="section parallax m-0 dark" style="background-image: url('one-page/images/page/testimonials.jpg'); padding: 150px 0;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
-
-						<div class="container clearfix">
-
-							<div class="row justify-content-end">
-								<div class="col-md-7">
-									<div class="slide">
-										<div class="testi-content" style="font-size: 30px;">
-											<p>E-career summit ile öğrencilerimizi e-ticaret konusunda bilinçlendirerek günümüzün ve geleceğimizin sektörüne <strong>bin</strong>  adım daha yaklaştırmak istiyoruz.</p>
-											
-										</div>
-									<!-- <div class="fslider testimonial testimonial-full bg-transparent border-0 shadow-none p-0" data-arrows="false">
-										<div class="flexslider">
-											<div class="slider-wrap">
-												<div class="slide">
-													<div class="testi-content">
-														<p>Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque vero numquam?</p>
-														<div class="testi-meta">
-															Steve Jobs
-															<span>Apple Inc.</span>
-														</div>
-													</div>
-												</div>
-												<div class="slide">
-													<div class="testi-content">
-														<p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
-														<div class="testi-meta">
-															Collis Ta'eed
-															<span>Envato Inc.</span>
-														</div>
-													</div>
-												</div>
-												<div class="slide">
-													<div class="testi-content">
-														<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
-														<div class="testi-meta">
-															John Doe
-															<span>XYZ Inc.</span>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div> -->
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<div id="section-speaker" class="center page-section">
-
-					<div class="container clearfix">
-
-						<h2 class="mx-auto bottommargin font-body" style="max-width: 700px; font-size: 40px;">KONUŞMACILAR</h2>
-
-						<p class="lead mx-auto bottommargin" style="max-width: 800px;">Yakında Eklenecektir</p>
-
-						
-
-						<div class="clear"></div>
-
-						<!-- <div class="row topmargin-lg mx-auto" style="max-width: 1000px;">
-
-							<div class="col-md-4 mb-5">
-
-								<div class="team">
-									<div class="team-image">
-										<img src="one-page/images/team/1.jpg" alt="John Doe">
-										<div class="bg-overlay">
-											<div class="bg-overlay-content align-items-end" data-hover-animate="fadeIn" data-hover-speed="400">
-												<a href="#" class="social-icon si-borderless si-small si-facebook" title="Facebook">
-													<i class="icon-facebook"></i>
-													<i class="icon-facebook"></i>
-												</a>
-												<a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
-													<i class="icon-twitter"></i>
-													<i class="icon-twitter"></i>
-												</a>
-												<a href="#" class="social-icon si-borderless si-small si-github" title="Github">
-													<i class="icon-github"></i>
-													<i class="icon-github"></i>
-												</a>
-											</div>
-											<div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="400"></div>
-										</div>
-									</div>
-									<div class="team-desc team-desc-bg">
-										<div class="team-title"><h4>John Doe</h4><span>CEO</span></div>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-md-4 mb-5">
-
-								<div class="team">
-									<div class="team-image">
-										<img src="one-page/images/team/2.jpg" alt="Josh Clark">
-										<div class="bg-overlay">
-											<div class="bg-overlay-content align-items-end" data-hover-animate="fadeIn" data-hover-speed="400">
-												<a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
-													<i class="icon-twitter"></i>
-													<i class="icon-twitter"></i>
-												</a>
-												<a href="#" class="social-icon si-borderless si-small si-linkedin" title="LinkedIn">
-													<i class="icon-linkedin"></i>
-													<i class="icon-linkedin"></i>
-												</a>
-												<a href="#" class="social-icon si-borderless si-small si-flickr" title="Flickr">
-													<i class="icon-flickr"></i>
-													<i class="icon-flickr"></i>
-												</a>
-											</div>
-											<div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="400"></div>
-										</div>
-									</div>
-									<div class="team-desc team-desc-bg">
-										<div class="team-title"><h4>Mary Jane</h4><span>Co-Founder</span></div>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-md-4 mb-5">
-
-								<div class="team">
-									<div class="team-image">
-										<img src="one-page/images/team/3.jpg" alt="Mary Jane">
-										<div class="bg-overlay">
-											<div class="bg-overlay-content align-items-end" data-hover-animate="fadeIn" data-hover-speed="400">
-												<a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
-													<i class="icon-twitter"></i>
-													<i class="icon-twitter"></i>
-												</a>
-												<a href="#" class="social-icon si-borderless si-small si-vimeo" title="Vimeo">
-													<i class="icon-vimeo"></i>
-													<i class="icon-vimeo"></i>
-												</a>
-												<a href="#" class="social-icon si-borderless si-small si-instagram" title="Instagram">
-													<i class="icon-instagram"></i>
-													<i class="icon-instagram"></i>
-												</a>
-											</div>
-											<div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="400"></div>
-										</div>
-									</div>
-									<div class="team-desc team-desc-bg">
-										<div class="team-title"><h4>Josh Clark</h4><span>Sales</span></div>
-									</div>
-								</div>
-
-							</div>
-
-						</div> -->
-
-					</div>
-
-				</div>
-
-				<div id="section-blog" class="page-section">
-
-					<h2 class="text-center text-uppercase font-weight-light ls3 font-body">Süreç Takvimi</h2>
-
-				
-
-					<div class="container topmargin-lg clearfix">
-
-						<p style="justify-content: center; text-align: center;">YAKINDA EKLENECEKTİR</p>
-
-						<!-- <div id="oc-clients" class="owl-carousel topmargin image-carousel carousel-widget" data-margin="80" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
-
-							<div class="oc-item"><a href="#"><img src="one-page/images/clients/1.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="one-page/images/clients/2.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="one-page/images/clients/3.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="one-page/images/clients/4.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="one-page/images/clients/5.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="one-page/images/clients/6.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="one-page/images/clients/7.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="one-page/images/clients/8.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="one-page/images/clients/9.png" alt="Clients"></a></div>
-							<div class="oc-item"><a href="#"><img src="one-page/images/clients/10.png" alt="Clients"></a></div>
-
-						</div> -->
-
-					</div>
-
-				</div>
-
-				<div id="section-contact" class="page-section pt-0">
-
-					<div class="row mx-0 bottommargin-lg align-items-stretch">
-						<div class="col-lg-8 col-md-6 d-none d-md-block px-0">
-							<div class="gmap h-100" ><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12034.23292610252!2d28.9983252!3d41.0567889!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe48bbf2454159e09!2sBilgiyi%20Ticarile%C5%9Ftirme%20Merkezi!5e0!3m2!1str!2str!4v1609235014814!5m2!1str!2str" width="500" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
-						</div>
-						<div class="col-lg-4 col-md-6" style="background-color: #F5F5F5; ">
-							<div class="col-padding" style="    padding: 150px 10px 10px 10px;">
-								<h3 class="font-body font-weight-normal ls1" style="text-align: center;
-								text-transform: uppercase;
-								color: #3f87e9;
-								font-weight: bold !important;
-								font-size:30px">İletişim</h3>
-
-								<div style="font-size: 18px;
-								text-align: center;
-								line-height: 1.7;
-								color: #636363;">
-									<address style="line-height: 1.7;">
-										
-										Fulya Mahallesi <br>
-										Yeşilçimen Sokak <br>	
-										Polat Tower Bağımsız Bölüm, <br>
-										D:430 Şişli/ İstanbul
-										
-									
-									</address>
-
-									<div class="clear topmargin-sm"></div>
-
-									<div class="clear topmargin"></div>
-
-									<abbr title="Phone Number"><strong>Telefon:</strong></abbr> (1) 8547 632521<br>
-								
-									<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div id="section-register" class="page-section pt-0">
-
-				
-
-					<div class="container clearfix">
-
-						<div class="mx-auto topmargin" style="max-width: 850px;">
-
-							<div class="form-widget">
-								<h1 style="text-align: center; font-size: 25px;
-								color: #3d90f0;
-								font-weight: 600;">ETKİNLİK KAYIT</h1>
-
-								<div class="form-result"></div>
-
-								<form class="row mb-0" id="template-contactform" name="template-contactform" action="one-page/php/form.php" method="post">
-
-									<div class="form-process">
-										<div class="css3-spinner">
-											<div class="css3-spinner-scale-ripple">
-												<div></div>
-												<div></div>
-												<div></div>
-											</div>
-										</div>
-									</div>
-
-									<div class="col-md-6 mb-4">
-										<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control border-form-control required" placeholder="Ad Soyad" />
-									</div>
-									<div class="col-md-6 mb-4">
-										<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control border-form-control" placeholder="Email " />
-									</div>
-
-									<div class="w-100"></div>
-
-									<div class="col-md-4 mb-4">
-										<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control border-form-control" placeholder="Tel" />
-									</div>
-
-									<div class="col-md-8 mb-4">
-										<input type="text" id="template-contactform-subject" name="subject" value="" class="required sm-form-control border-form-control" placeholder="OKUL" />
-									</div>
-
-									<div class="w-100"></div>
-
-									<div class="col-12 mb-4">
-										<input type="text" id="template-contactform-subject" name="subject" value="" class="required sm-form-control border-form-control" placeholder="BÖLÜM" />
-									</div>
-
-									<div class="col-12 center mb-4">
-										<button class="button button-border button-circle font-weight-medium ml-0 topmargin-sm" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Kayıt Ol</button>
-										<br>
-										
-									</div>
-
-									<div class="w-100"></div>
-
-									<div class="col-12 d-none">
-										<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
-									</div>
-
-									<input type="hidden" name="prefix" value="template-contactform-">
-
-								</form>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-		</section><!-- #content end -->
-
-		<!-- Footer
-		============================================= -->
-		<footer id="footer" class="dark border-0">
-
-			<div class="container center">
-				<div class="footer-widgets-wrap">
-
-					<div class="row mx-auto clearfix">
-
-						<div class="col-lg-4">
-
-							<div class="widget clearfix">
-								<a href="#"><img src="one-page/images/ecs-logo.png" alt="" style="width: 50%;"></a>
-								
-
-								<ul class="list-unstyled footer-site-links mb-0">
-									<li><a href="#" data-scrollto="#wrapper" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Ana Sayfa</a></li>
-									<li><a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Hakkımızda</a></li>
-									<li><a href="#" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Partner/Sektör</a></li>
-									<li><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Hedef</a></li>
-									<li><a href="#" data-scrollto="#section-speaker" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Konuşmacılar</a></li>
-									<li><a href="#" data-scrollto="#section-blog" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Süreç Takvimi</a></li>
-									<li><a href="#" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">İletişim</a></li>
-									<li><a href="#" data-scrollto="#section-register" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Kayıt</a></li>
-								</ul>
-							</div>
-
-						</div>
-
-						<div class="col-lg-4">
-
-							<div class="widget subscribe-widget clearfix" data-loader="button">
-								<h4>Abone Olun</h4>
-
-								<div class="widget-subscribe-form-result"></div>
-								<form id="widget-subscribe-form" action="one-page/php/subscribe.php" method="post" class="mb-0">
-									<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control form-control-lg not-dark required email" placeholder="Email">
-									<button class="button button-border button-circle button-light topmargin-sm" type="submit">Abone Ol</button>
-								</form>
-							</div>
-
-						</div>
-
-						<div class="col-lg-4">
-
-							<div class="widget clearfix">
-								<h4>İletişim</h4>
-
-								<p class="lead">Fulya Mahallesi
-									Yeşilçimen Sokak
-									Polat Tower Bağımsız Bölüm,
-									D:430 Şişli/ İstanbul</p>
-
-								<div class="center topmargin-sm">
-									<a href="#" class="social-icon inline-block border-0 si-small si-facebook" title="Facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a href="#" class="social-icon inline-block border-0 si-small si-twitter" title="Twitter">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-									
-									<a href="#" class="social-icon inline-block border-0 si-small si-pinterest" title="Pinterest">
-										<i class="icon-pinterest"></i>
-										<i class="icon-pinterest"></i>
-									</a>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<div id="copyrights">
-				<div class="container center clearfix">
-					E-Career Summit, <a href="https://ogrencikariyeri.com/">Öğrenci Kariyeri</a>  ve  <a href="https://badiworks.com/">BadiWorks</a>  tarafından desteklenmektedir.
-				</div>
-			</div>
-
-		</footer><!-- #footer end -->
-
-	</div><!-- #wrapper end -->
-
-	<!-- Go To Top
-	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
-
-	<!-- JavaScripts
-	============================================= -->
-	<script src="one-page/js/jquery.js"></script>
-	<script src="one-page/js/plugins.min.js"></script>
-	<script src="https://maps.google.com/maps/api/js?key=YOUR-API-KEY"></script>
-
-	<!-- Footer Scripts
-	============================================= -->
-	<script src="one-page/js/functions.js"></script>
-
-	<script>
-
-		jQuery(window).on( 'pluginCarouselReady', function() {
-			var owlWatch	= $('#oc-watch'),
-				owlWatchbg	= $('.bgchanger');
-
-			owlWatch.on('translated.owl.carousel changed.owl.carousel', function(event) {
-				var bgcolor = owlWatch.find('.active img').attr('data-bg');
-				owlWatchbg.css({ 'background-color': bgcolor });
-			});
-		});
-
-
-	</script>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#intro">The<span>Event</span></a></h1>-->
+        <a href="index.html" class="scrollto"><img src="assets/img/logo_new.png" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="#about">Hakkımızda</a></li>
+          <li><a href="#speakers">Konuşmacılar</a></li>
+          <li><a href="#schedule">Süreç Takvimi</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#supporters">İş Ortakları</a></li>
+          
+          <li><a href="#faq">S.S.S</a></li>
+          <li><a href="#footer">İletişim</a></li>
+          <li class="buy-tickets"><a href="#contact">Kayıt Ol</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Intro Section ======= -->
+  <section id="intro">
+    <div class="intro-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="mb-4 pb-0">SADECE <span>1000 E-TİCARET <br></span> MERAKLISININ  BULUNABİLECEĞİ BU ZİRVEDE <br> GEÇ OLMADAN YERİNİ AYIRT!</h1>
+      <!-- <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p> -->
+      <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+      <!-- <a href="#about" class="about-btn scrollto">About The Event</a> -->
+    </div>
+  </section><!-- End Intro Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-12" id="header-title">
+            <h2>E-Career Summit Nedir ?</h2>
+            <p>Özellikle Covid-19 ile birlikte yüksek bir ivme kazanmış ve halihazırda genel ticarette dominant bir hale gelmiş olan E-Ticaret'i,sektörün önde gelen firmaları ve bu firamaların değerli yöneticileri aracılığıyla tanıyor ve tanıtıyoruz.</p>
+          </div>
+          <!-- <div class="col-lg-3">
+            <h3>Where</h3>
+            <p>Downtown Conference Center, New York</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>When</h3>
+            <p>Monday to Wednesday<br>10-12 December</p>
+          </div> -->
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Speakers Section ======= -->
+    <section id="speakers">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Konuşmacılar</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a href="speaker-details.html">Brenden Legros</a></h3>
+                <p>Quas alias incidunt</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/2.jpg" alt="Speaker 2" class="img-fluid">
+              <div class="details">
+                <h3><a href="speaker-details.html">Hubert Hirthe</a></h3>
+                <p>Consequuntur odio aut</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
+              <div class="details">
+                <h3><a href="speaker-details.html">Cole Emmerich</a></h3>
+                <p>Fugiat laborum et</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/speakers/4.jpg" alt="Speaker 4" class="img-fluid">
+              <div class="details">
+                <h3><a href="speaker-details.html">Jack Christiansen</a></h3>
+                <p>Debitis iure vero</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details">
+                <h3><a href="speaker-details.html">Alejandrin Littel</a></h3>
+                <p>Qui molestiae natus</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/speakers/6.jpg" alt="Speaker 6" class="img-fluid">
+              <div class="details">
+                <h3><a href="speaker-details.html">Willow Trantow</a></h3>
+                <p>Non autem dicta</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Speakers Section -->
+
+    <!-- ======= Schedule Section ======= -->
+    <section id="schedule" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>SÜREÇ TAKVİMİ</h2>
+          <p></p>
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item">
+            <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">GÜN 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">GÜN 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">GÜN 3</a>
+          </li>
+        </ul>
+
+        <!-- <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
+          necessitatibus voluptatem quis labore perspiciatis quia.</h3> -->
+
+        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- Schdule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>09:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Registration</h4>
+                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/1.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Keynote <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/2.jpg" alt="Hubert Hirthe">
+                </div>
+                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 1 -->
+
+          <!-- Schdule Day 2 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/1.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/2.jpg" alt="Hubert Hirthe">
+                </div>
+                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 2 -->
+
+          <!-- Schdule Day 3 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/2.jpg" alt="Hubert Hirthe">
+                </div>
+                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/1.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 2 -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Schedule Section -->
+
+    <!-- ======= Venue Section ======= -->
+    <!-- <section id="venue">
+
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Event Venue</h2>
+          <p>Event venue location info and gallery</p>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 venue-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6 venue-info">
+            <div class="row justify-content-center">
+              <div class="col-11 col-lg-8">
+                <h3>Downtown Conference Center, New York</h3>
+                <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus. Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid venue-gallery-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/venue-gallery/1.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="assets/img/venue-gallery/1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/venue-gallery/2.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="assets/img/venue-gallery/2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/venue-gallery/3.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="assets/img/venue-gallery/3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/venue-gallery/4.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="assets/img/venue-gallery/4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/venue-gallery/5.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="assets/img/venue-gallery/5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/venue-gallery/6.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="assets/img/venue-gallery/6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/venue-gallery/7.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="assets/img/venue-gallery/7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/venue-gallery/8.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="assets/img/venue-gallery/8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section> -->
+
+    <!-- ======= Hotels Section ======= -->
+    <!-- <section id="hotels" class="section-with-bg">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Hotels</h2>
+          <p>Her are some nearby hotels</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <img src="assets/img/hotels/1.jpg" alt="Hotel 1" class="img-fluid">
+              </div>
+              <h3><a href="#">Hotel 1</a></h3>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>0.4 Mile from the Venue</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <img src="assets/img/hotels/2.jpg" alt="Hotel 2" class="img-fluid">
+              </div>
+              <h3><a href="#">Hotel 2</a></h3>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-full"></i>
+              </div>
+              <p>0.5 Mile from the Venue</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="hotel">
+              <div class="hotel-img">
+                <img src="assets/img/hotels/3.jpg" alt="Hotel 3" class="img-fluid">
+              </div>
+              <h3><a href="#">Hotel 3</a></h3>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>0.6 Mile from the Venue</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section> -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <p>Check our gallery from the recent events</p>
+        </div>
+      </div>
+
+      <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">
+        <a href="assets/img/gallery/1.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/1.jpg" alt=""></a>
+        <a href="assets/img/gallery/2.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/2.jpg" alt=""></a>
+        <a href="assets/img/gallery/3.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/3.jpg" alt=""></a>
+        <a href="assets/img/gallery/4.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/4.jpg" alt=""></a>
+        <a href="assets/img/gallery/5.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/5.jpg" alt=""></a>
+        <a href="assets/img/gallery/6.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/6.jpg" alt=""></a>
+        <a href="assets/img/gallery/7.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/7.jpg" alt=""></a>
+        <a href="assets/img/gallery/8.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/img/gallery/8.jpg" alt=""></a>
+      </div>
+
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Supporters Section ======= -->
+    <section id="supporters" class="section-with-bg">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>İŞ ORTAKLARI</h2>
+        </div>
+
+        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/4.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/5.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/6.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/7.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/8.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Sponsors Section -->
+
+    <!-- =======  F.A.Q Section ======= -->
+    <section id="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>S.S.S</h2>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-9">
+            <ul id="faq-list">
+
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#faq1">Zirveye her başvuran girebilecek mi?? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq1" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Ön başvuru yapan tüm adayların mailine Genel Yetenek ve İngilizce assessment testi gönderilecektir. Başarılı olan <strong>1000</strong>  aday akademiye katılmaya hak kazanacaktır.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq2" class="collapsed">Sınav kaç sorudan oluşmaktadır? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq2" class="collapse" data-parent="#faq-list">
+                  <p>
+                    20’si Genel Yetenek, 10’u İngilizce olmak üzere toplamda 30 soru bulunmaktadır.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq3" class="collapsed">Bu zirve bana ne katacak? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq3" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Alanında uzman, 50’den fazla gözde şirketin 120 iş profesyoneli, bilgi birikimlerini akademi öğrencilerine aktaracaktır. Profesyonellerle networking imkanının sağlandığı akademide öğrenciler geleceğin yöneticileri olma yolunda büyük bir adım atacaktır.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq4" class="collapsed">Başvurdum, sınava ne zaman girebileceğim? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq4" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Ön başvuru yapan adayların mail adreslerine 15.01.2021 – 30.01.2021 tarihleri arasında online sınav gönderilecektir.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq5" class="collapsed">Zirve sırasında eğitmenlere soru sorabilecek miyiz? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq5" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Evet, zirve sırasında chat kısmından eğitmenlerimize anlık olarak sorularınızı iletebileceksiniz. Bu noktada eğitimlere düzenli katılımınız oldukça önemlidir.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq6" class="collapsed">Sertifika olacak mı? Olursa başarı ve katılım için ayrı sertifikalar mı olacak? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq6" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Zirve sertifikalı olacaktır. Her katılan katılım sertifikası alacaktır. Başarı sertifikası her ay yapılacak değerlendirme sınavları neticesinde verilecektir.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End  F.A.Q Section -->
+
+    <!-- ======= Subscribe Section ======= -->
+    <section id="subscribe">
+      <div class="container" data-aos="zoom-in">
+        <div class="section-header">
+          <h2>GELİŞMELERDEN HABERDAR OL</h2>
+          <p>Email Adresini göndererek E-Career Summit Hakkında gelişmelerden haberdar olun</p>
+        </div>
+
+        <form method="POST" action="#">
+          <div class="form-row justify-content-center">
+            <div class="col-auto">
+              <input type="text" class="form-control" placeholder="Email">
+            </div>
+            <div class="col-auto">
+              <button type="submit">Gönder</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section><!-- End Subscribe Section -->
+
+    <!-- ======= Buy Ticket Section ======= -->
+    <!-- <section id="buy-tickets" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Buy Tickets</h2>
+          <p>Velit consequatur consequatur inventore iste fugit unde omnis eum aut.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Standard Access</h5>
+                <h6 class="card-price text-center">$150</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Community Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Pro Access</h5>
+                <h6 class="card-price text-center">$250</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="pro-access">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Premium Access</h5>
+                <h6 class="card-price text-center">$350</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Workshop Access</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>After Party</li>
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy Now</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+     
+      <div id="buy-ticket-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Buy Tickets</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="#">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <select id="ticket-type" name="ticket-type" class="form-control">
+                    <option value="">-- Select Your Ticket Type --</option>
+                    <option value="standard-access">Standard Access</option>
+                    <option value="pro-access">Pro Access</option>
+                    <option value="premium-access">Premium Access</option>
+                  </select>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn">Buy Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section> -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="section-bg">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>ETKİNLİK KAYIT</h2>
+          <!-- <p>Nihil officia ut sint molestiae tenetur.</p> -->
+        </div>
+
+        <!-- <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>A108 Adam Street, NY 535022, USA</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+          </div>
+
+        </div> -->
+
+        <div class="form">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Ad" data-rule="minlen:4" data-msg="Lütfen boş bırakmayınız" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="surname" class="form-control" name="surname" id="surname" placeholder="Soyad" data-rule="email" data-msg="Lütfen boş bırakmayınız" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" name="email" class="form-control" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Lütfen boş bırakmayınız" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="tel" class="form-control" name="tel" id="tel" placeholder="Tel" data-rule="email" data-msg="Lütfen boş bırakmayınız" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="school" placeholder="Okul Adı" data-rule="minlen:4" data-msg="Lütfen boş bırakmayınız" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="school-department" id="school-department" placeholder="Bölüm Adı" data-rule="school-department" data-msg="Lütfen boş bırakmayınız" />
+                <div class="validate"></div>
+              </div>
+            </div>
+            <!-- <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validate"></div>
+            </div> -->
+            
+            <div class="mb-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">GÖNDER</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <img src="assets/img/logo_new.png" alt="TheEvenet">
+             <p>Özellikle Covid-19 ile birlikte yüksek bir ivme kazanmış ve halihazırda genel ticarette dominant bir hale gelmiş olan E-Ticaret'i,sektörün önde gelen firmaları ve bu firamaların değerli yöneticileri aracılığıyla tanıyor ve tanıtıyoruz.</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <!-- <h4>Useful Links</h4> -->
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="index.html">Ana Sayfa</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#about">Hakkımızda</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#speakers">Konuşmacılar</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#schedule">Süreç Takvimi</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#supporters">İş Ortakalarımız</a></li>
+            </ul>
+          </div>
+
+          <!-- <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>İletişim</h4>
+            <p>
+              Fulya Mahallesi
+              Yeşilçimen Sokak <br>
+              Polat Tower Bağımsız Bölüm,<br>
+              D:430 Şişli/ İstanbul <br>
+              <strong>Tel:</strong> 0(850) 888 2234 <br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; E-Career Summit, <a href="https://ogrencikariyeri.com/"">Öğrenci Kariyeri</a>  ve <a href="https://badiworks.com/"">BadiWorks</a>  tarafından desteklenmektedir.
+      </div>
+   
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/superfish/superfish.min.js"></script>
+  <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
