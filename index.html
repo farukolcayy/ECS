@@ -624,8 +624,8 @@
 
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Gallery</h2>
-          <p>Check our gallery from the recent events</p>
+          <h2>GALERİ</h2>
+          <!-- <p>Check our gallery from the recent events</p> -->
         </div>
       </div>
 
@@ -958,31 +958,43 @@
         </div> -->
 
         <div class="form">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form id="form_id"  >
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Ad" data-rule="minlen:4" data-msg="Lütfen boş bırakmayınız" />
+                <input name="name" class="form-control" id="name" placeholder="Ad"  required />
                 <div class="validate"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="surname" class="form-control" name="surname" id="surname" placeholder="Soyad" data-rule="email" data-msg="Lütfen boş bırakmayınız" />
+                <input class="form-control" name="surname" id="surname" placeholder="Soyad"  required/>
                 <div class="validate"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" name="email" class="form-control" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Lütfen boş bırakmayınız" />
+                <input  name="email" class="form-control" id="email" placeholder="Email"  required/>
                 <div class="validate"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="tel" class="form-control" name="tel" id="tel" placeholder="Tel" data-rule="email" data-msg="Lütfen boş bırakmayınız" />
+                <input  class="form-control" name="tel" id="tel" placeholder="Tel" required />
                 <div class="validate"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="school" placeholder="Okul Adı" data-rule="minlen:4" data-msg="Lütfen boş bırakmayınız" />
+                <input  name="school_name" class="form-control" id="school" placeholder="Okul Adı" required/>
                 <div class="validate"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="text" class="form-control" name="school-department" id="school-department" placeholder="Bölüm Adı" data-rule="school-department" data-msg="Lütfen boş bırakmayınız" />
+                <input  class="form-control" name="school_department" id="school-department" placeholder="Bölüm Adı" required/>
                 <div class="validate"></div>
+              </div>
+              <div class="form-group col-md-4">
+                  <select class="form-control" name="class" id="className">
+                    <option selected="selected">Sınıf Seçiniz...</option>
+                    <option value="0">Hazırlık</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">Mezun</option>
+
+                  </select>
               </div>
             </div>
             <!-- <div class="form-group">
@@ -991,11 +1003,9 @@
             </div> -->
             
             <div class="mb-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+             
             </div>
-            <div class="text-center"><button type="submit">GÖNDER</button></div>
+            <div class="text-center"><button name="submit" type="submit">GÖNDER</button></div>
           </form>
         </div>
 
@@ -1071,6 +1081,8 @@
     </div>
   </footer><!-- End  Footer -->
 
+
+  
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <!-- Vendor JS Files -->
@@ -1083,6 +1095,41 @@
   <script src="assets/vendor/superfish/superfish.min.js"></script>
   <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+
+
+  <script>
+    $(document).ready(function(){
+    
+       $('#form_id').submit(function(e){
+          
+         var className= $("#className option:selected").text();
+
+
+         var values = $(this).serialize();
+           values +="&className="+encodeURIComponent(className);
+            $.ajax({
+                type:"POST",
+                url: "post.php",
+                data: values
+              })
+                  .done(function(data){
+                  
+                    alert(data);
+                  })
+              .fail(function(e){
+                console.log(e);
+                alert("Hata");
+
+              });
+              return false;
+            
+
+
+       });
+    });
+  </script>
+
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
