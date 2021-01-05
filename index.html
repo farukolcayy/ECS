@@ -9,6 +9,10 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- Toastr -->
+  <link rel="stylesheet" href="assets/css/toastr.css">
+
+
   <!-- Favicons -->
   <link href="assets/img/favicon_new.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -1005,7 +1009,7 @@
             <div class="mb-3">
              
             </div>
-            <div class="text-center"><button name="submit" type="submit">GÖNDER</button></div>
+            <div class="text-center php-email-form"><button  name="subscribe" type="submit">GÖNDER</button></div>
           </form>
         </div>
 
@@ -1095,10 +1099,30 @@
   <script src="assets/vendor/superfish/superfish.min.js"></script>
   <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-
+  <script src="assets/js/toastr.min.js"></script>
 
   <script>
     $(document).ready(function(){
+
+      toastr.options = {
+				"closeButton": true,
+				"debug": false,
+				"progressBar": true,
+				"preventDuplicates": true,
+				"onclick": null,
+				"showDuration": "300",
+				"hideDuration": "1000",
+				"timeOut": "1500",
+				"showEasing": "swing",
+				"hideEasing": "linear",
+				"showMethod": "fadeIn",
+				"hideMethod": "fadeOut"
+			};
+
+      function MailKontrol(email) {
+				var kontrol = new RegExp(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+				return kontrol.test(email);
+			};
     
        $('#form_id').submit(function(e){
           
@@ -1113,12 +1137,15 @@
                 data: values
               })
                   .done(function(data){
-                  
-                    alert(data);
+                    toastr["success"]("Giriş Başarılı!");
+                     $('#form_id')[0].reset();
+             
                   })
               .fail(function(e){
                 console.log(e);
-                alert("Hata");
+                toastr["warning"]("Giriş başarısız!");
+              
+               
 
               });
               return false;
