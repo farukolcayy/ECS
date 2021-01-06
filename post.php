@@ -15,6 +15,8 @@
    $school_name = $_POST['school_name'];
    $school_department = $_POST['school_department'];
    $className = $_POST['className'];
+   
+
 
   if(!empty($name) && !empty($surname) && !empty($email) && !empty($tel) && !empty($school_name) && !empty($school_department) && !empty($className) && $className!="Sınıf Seçiniz..."  ){
       $sql= "INSERT INTO basvuru (name,surname,emailAddress,phoneNumber,university,department,class) VALUES ('$name','$surname','$email','$tel','$school_name','$school_department','$className')";
